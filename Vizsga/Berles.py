@@ -10,17 +10,17 @@ class Berles:
     @property
     def berlesek(self):
         for berles in self._berlesek:
-            print(f" Rendszám: {Auto.rendszam}, Bérletidíj: {Auto.dij} huf - Bérlés napja: {berles.is_booked}")
+            print(f" Rendszám: {Auto.rendszam}, Bérlés napja: {berles.is_booked}, foglalas_datuma{None}")
 
     @berlesek.setter
     def berlesek(self, new_berles):
         self._berlesek.append(new_berles)
 
     def _init_data(self):
-        self._Berles.berlesek = Berles("ABC-101", "2024.12.10", "2024.11.25")
-        self._Berles.berlesek = Berles("ABC-102", "2024.12.15", "2024.11.24")
-        self._Berles.berlesek = Berles("ABC-103", "2024.12.16","2024.11.20")
-        self._Berles.berlesek = Berles("ABC-101", "2024.12.17", '2024.10.10')
+        self.berlesek = Berles("ABC-101", "2024.12.10", "2024.11.25")
+        self.berlesek = Berles("ABC-102", "2024.12.15", "2024.11.24")
+        self.berlesek = Berles("ABC-103", "2024.12.16","2024.11.20")
+        self.berlesek = Berles("ABC-101", "2024.12.17", '2024.10.10')
     def __str__(self):
 
         if self.foglalas_datuma <= self.berles_napja:
