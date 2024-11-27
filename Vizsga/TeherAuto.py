@@ -2,7 +2,7 @@ from Auto import Auto
 class TeherAuto(Auto):
     def __init__(self, rendszam, dij):
         super().__init__(rendszam, dij)
-        self.extras = []
+        self.extras = ["osszkerek_meghajtas"]
     def book_auto(self):
         if not self.is_booked:
             self.is_booked = True
