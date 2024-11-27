@@ -8,15 +8,15 @@ class AutoKolcsonzo:
     @property
     def autok(self):
         for auto in self._autok:
-            print(f" Rendszám: {auto.rendszam}, Bérletidíj: {auto.dij} huf - Foglalt: {auto.is_booked}")
+            print(f" Sorszám:{auto.sorszam}, Rendszám: {auto.rendszam}, Bérletidíj: {auto.dij} huf - Foglalt: {auto.is_booked}")
     @autok.setter
     def autok(self, new_auto):
         self._autok.append(new_auto)
-    def book_by_rendszam(self, rendszam):
+    def book_by_sorszam(self, sorszam):
         for auto in self._autok:
-            if auto.rendszam == rendszam:
+            if auto.sorszam == sorszam:
                 return auto.book_auto()
-    def unbook_by_rendszam(self, rendszam):
+    def unbook_by_sorszam(self, sorszam):
         for auto in self._autok:
-            if auto.rendszam == rendszam:
+            if auto.sorszam == sorszam:
                 return auto.unbook_auto()

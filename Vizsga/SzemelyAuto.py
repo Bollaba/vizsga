@@ -1,7 +1,7 @@
 from Auto import Auto
 class SzemelyAuto(Auto):
-    def __init__(self, rendszam, dij):
-        super().__init__(rendszam, dij)
+    def __init__(self, sorszam, dij, rendszam, tipus):
+        super().__init__(sorszam, dij, rendszam, tipus)
         self.extras = ["radio", "ulesfutes"]
     def book_auto(self):
         if not self.is_booked:
