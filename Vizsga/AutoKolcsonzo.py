@@ -8,7 +8,7 @@ class AutoKolcsonzo:
     @property
     def autok(self):
         for auto in self._autok:
-            print(f" Sorszám:{auto.sorszam}, Rendszám: {auto.rendszam}, Bérletidíj: {auto.dij} huf - Foglalt: {auto.is_booked}")
+            print(f" Sorszám:{auto.sorszam}, Rendszám: {auto.rendszam},Típus:{auto.tipus}, Bérletidíj: {auto.dij} huf - Foglalt: {auto.is_booked}")
     @autok.setter
     def autok(self, new_auto):
         self._autok.append(new_auto)

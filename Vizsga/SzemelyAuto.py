@@ -12,4 +12,4 @@ class SzemelyAuto(Auto):
         if self.is_booked:
             self.is_booked = False
         else:
-            print("Hiba, az autó nem is volt foglalt!")
+            print("Hiba, az autó nem volt foglalt!")
