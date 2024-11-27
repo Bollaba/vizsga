@@ -1,8 +1,7 @@
 from abc import ABC
 class Auto(ABC):
-    def __init__(self, rendszam, tipus, price):
+    def __init__(self, rendszam, dij):
         self.rendszam = rendszam
-        self.tipus =tipus
         self.dij = dij
         self.is_booked = False
         self.extras = []
